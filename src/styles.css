@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a.nav-link{
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    text-transform: uppercase;
+}
+a.nav-link:hover{
+    color: blue;
+}
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    border: 2px solid rgb(red, green, blue);
+}
+.logo{
+    height: 39px;
+    width: 38px;
+    margin-right: 16px;
+}
+
+.carousel-item img{
+    height: 350px;
+}
