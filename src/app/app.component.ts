@@ -8,7 +8,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class AppComponent {
   title = 'e-commerce-site';
-
+  show:any ;
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -33,6 +33,13 @@ export class AppComponent {
     },
     nav: true
   }
+  mystyle(){
+   if(this.show==""){
+    this.show=true
+}else{
+  this.show=false
 }
+  }
+  
 
-
+}
