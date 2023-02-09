@@ -14,6 +14,8 @@ export class AppComponent {
   chooseItem: any;
   effect:any;
   selectItem:any;
+  decItem:any;
+  incItem:any;
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -105,6 +107,17 @@ this.selectedItem.like = !this.selectedItem.like
        this.chooseItem.incart= ++this.chooseItem.incart
       //  console.log(this.chooseItem);
 
+  }
+  addminus(id:any){
+    var minus= this.itemList.findIndex((item:any)=>item.id==id)
+    this.decItem=this.itemList[minus]
+    this.decItem.incart= --this.decItem.incart
+  
+  }
+  addplus(id:any){
+    var plus= this.itemList.findIndex((item:any)=>item.id==id)
+    this.incItem=this.itemList[plus]
+    this.incItem.incart= ++this.incItem.incart
   }
   eyeAct(id:any){
     // console.log(id);
